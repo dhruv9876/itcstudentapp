@@ -81,7 +81,7 @@ app.delete("/admin/deleteByEmail/:email", async (req, res) => {
 })
 app.patch("/admin/updateByEmail/:email",(req,res)=>{
     const sid=req.params.email;
-    const {name,email}
+    const {name,email} =req.body;
 })
 app.listen(3002, () => {
     console.log("Express server is running on" + 3002)
